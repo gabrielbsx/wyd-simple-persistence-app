@@ -5,7 +5,9 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "dev": "node --import tsx --env-file=.env.local --watch ./src/app.ts"
+    "start": "node --env-file=.env.local ./dist/app.cjs",
+    "dev": "node --import tsx --env-file=.env.local --watch ./src/app.ts",
+    "build": "tsup src/app.ts --minify --dts"
   },
   "keywords": [],
   "author": "gabrielbsx",

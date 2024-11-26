@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-await routes(app);
+routes(app);
 
 app.listen(env.PORT, () => {
   console.log(`Server is running on port ${env.PORT}`);
