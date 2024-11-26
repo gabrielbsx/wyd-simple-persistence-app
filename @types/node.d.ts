@@ -3,6 +3,9 @@ export declare global {
     interface ProcessEnv {
       PORT: number;
       IMPORTS_FOLDER: string;
+      ENV: string;
+      BASIC_AUTH_USERNAME: string;
+      BASIC_AUTH_PASSWORD: string;
     }
   }
 }
